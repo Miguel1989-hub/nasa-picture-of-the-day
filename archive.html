@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="NASA daily photo website" >
+  <meta name="description" content="NASA daily photo website">
   <meta name="author" content="Miguel Mendes de Barros">
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Roboto:wght@300;700&display=swap"
     rel="stylesheet">
@@ -14,13 +14,33 @@
   <link rel="stylesheet" href="archive.css">
   <title>Nasa-Picture of the day</title>
 </head>
+
 <body class="main-content">
   <header role="banner" class="header-container">
-    <h1 class="header-container--title">Astronomy Picture of the Day Archive</h1>
-    <hr class="line" >
+    <h1 class="header-container--title"><a class="ancor-title" href="index.html">Picture of the Day Archive</a></h1>
+    <hr class="line">
+    <div>
+      <input type="text" id="input-date" >
+      <button id="btn-2015" onclick="fetchNasa()" >Search</button>
+    </div>
+    <small class="small">Insira uma data válida. Ex.: yyyy-mm-dd</small>
   </header>
-  <main role="main">
-  
+  <main id="main-content" role="main">
+    <section class="container-main">
+      <span id="date" class="header-container--date"></span>
+      <a id="img-hd" href="">
+        <img id="img-main" href="" class="container-main--img" alt="">
+      </a>
+      <h2 class="container-main--title"><span id="title-text" class="bold"></span></h2>
+      <h3 class="container-main--copy"><span class="bold"></span> <span id="copy-text"></span>
+      </h3>
+      <p class="container-main--explanation">
+        <span class="bold"></span> <span id="explanation-text"></span>
+      </p>
+    </section>
+  </main>
   <footer class="footer-container" role="contentinfo">
-
   </footer>
+  <script src="archive.js"></script>
+</body>
+</html>

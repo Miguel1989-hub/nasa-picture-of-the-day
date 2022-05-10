@@ -2,3 +2,17 @@
     width: 100%
 }
 
+.small {
+    font-size: 14px;
+    padding-top: 2px;
+}
+
+.header-container--date {
+    padding-bottom: 0.5rem;
+}
+
+.ancor-title {
+    text-decoration: none;
+    color: white;
+}
+
